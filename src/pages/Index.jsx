@@ -30,7 +30,7 @@ const Index = () => {
       setText(fileText);
       setWordCount(countWords(fileText));
     };
-    reader.readAsText(file);
+    reader.readAsText(file, "UTF-8");
   };
 
   return (
